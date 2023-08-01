@@ -1,4 +1,4 @@
-const vetorJuros = new Array(5.0, 6.7,8.3,9.9,11.5,13.1,15.3,16.9,18.6,20.3,22.0,23.4);
+const vetorJuros = new Array(7.1,10.9,14.7,18.6,22.5,26.5,30.5,34.6,38.7,42.9,47.1,51.4);
 document.getElementById('calculate').addEventListener('click', function calcular(){
     const value = document.getElementById('value').value; 
     const parcela = document.querySelector('select').value;
