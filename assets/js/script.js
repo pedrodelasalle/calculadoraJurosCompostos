@@ -3,8 +3,10 @@ document.getElementById('calculate').addEventListener('click', function calcular
     const value = document.getElementById('value').value; 
     const parcela = document.querySelector('select').value;
     const fee = (vetorJuros[parcela-1])/100;
-    //document.getElementById('total').innerHTML = (fee + "%");
-    console.log(value, parcela, fee);
-    const total = value * (1 + fee)**parcela;
+    
+    const total = value/(1 - fee);
+    const parcelas = total/parcela;
+
     document.getElementById('total').innerHTML = ("R$" + total.toFixed(2));
+    document.getElementById('parcelas').innerHTML = ("R$" + parcelas.toFixed(2));
 })

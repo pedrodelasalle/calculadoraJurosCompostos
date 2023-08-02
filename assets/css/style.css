@@ -95,6 +95,12 @@
 
 #total {
     font-size: 40px;
+    margin: 10px;
+}
+
+#parcelas {
+    margin: 10px;
+    font-size: 40px;
 }
 
 #calculate {
